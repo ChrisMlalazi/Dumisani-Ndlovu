@@ -40,7 +40,7 @@ h1 {
     text-align: center;
     margin-top: 0;
     padding-top: 20px;
-    color: black;
+    color: #2F4F4F;
     font-size: 1.4em;
 }
 
@@ -138,8 +138,8 @@ h1 {
 .toggle {
   display: block;
   width: 50%;
-  background:rgba(255,255,255, 1);
-  padding: 15px;
+  background:rgba(200,200,200,0.5);
+  padding: 0;
   text-align: center;
   opacity: 0;
   -webkit-transition: ease-in 0.5s all;
@@ -147,8 +147,8 @@ h1 {
   -webkit-transform: translateY(-200%);
   -ms-transform: translateY(-200%);
   transform: translateY(-200%);
-  min-width: 100px;
-  margin-top: 0;
+  width: 120px;
+  margin-top: -65px;
   float: left;
 
 }
@@ -165,7 +165,7 @@ h1 {
 }
 
 .toggle-menu { 
-  margin-top: 70px; 
+  margin-top: 70px;
 }
 
 .toggle-menu li {
@@ -173,14 +173,10 @@ h1 {
   display: block;
   margin-bottom: 10px;
   padding-right: 30px;
-
   text-align: center;
-
 }
 
-a{
-	text-decoration: none;
-}
+
 span {
 	position: relative;
 	top: 29px;
@@ -190,7 +186,7 @@ span {
 
 .toggle-menu li a {
     text-decoration: none;
-    color: green;
+    color: #2F4F4F;;
     display: block;
     text-align: center;
     font-size: 17px;
@@ -204,8 +200,8 @@ span {
 .toggle-menu li a span { text-transform: lowercase; }
 
 .toggle-menu li a:hover {
-    color: purple;
-    border-left: 2px solid green;
+    color: orange;
+    border-left: 2px solid orange;
     -webkit-transition: linear 0.5s all;
     transition: linear 0.5s all;
     -webkit-transform: scale(1.15);
@@ -219,11 +215,12 @@ span {
 .navicon {
  float: left;
   width: 100%;
-  background: transparent;
+  background: orange;
+  border-radius: 10px;
   margin-top: 20px;
   margin-left: 20px;
   position: relative;
-  height: 30px;
+  height: 45px;
   width: 50px;
   display: block;
   z-index: 99;
@@ -233,7 +230,7 @@ span {
 }
 
 .navicon:before, .navicon:after {
-  background: green;
+  background: white;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   content: "";
@@ -242,10 +239,12 @@ span {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   width: 45px;
+  margin-top: 8px;
+  margin-left: 2px;
 }
 
 .navicon:before {
-  box-shadow: green 0 14px 0 0;
+  box-shadow: white 0 14px 0 0;
   position: absolute;
   top: 0;
 
@@ -292,6 +291,14 @@ span {
 
 }
 
+#footer p {
+  color: #2F4F4F;
+}
+
+#footer a{
+/*  text-decoration: none;*/
+color: #2F4F4F;
+}
 /**************** 
 About Page 
 ******************/
@@ -497,7 +504,8 @@ Media Queries
 }
 
 @media screen and (max-width: 736px) {
-.deg {
+.deg,
+.deg2 {
   display: none;
 }
 }
@@ -526,6 +534,18 @@ Media Queries
     top: 200px;
     font-weight: bold;
     width: 20%;
+  }
+
+
+  .deg2 {
+    font-size: .8em;
+    transform: rotate(20deg);
+    color: white;
+    position: relative;
+    left: 80px;
+    top: 200px;
+    font-weight: bold;
+    width: 80%;
   }
 
 }
