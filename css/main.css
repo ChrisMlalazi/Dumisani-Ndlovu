@@ -69,7 +69,7 @@ h1 {
     width: 120px;
     border-radius: 50%; 
     margin-top: 25px;  
-    border: 2px solid #ffffff;
+    border: 2px solid orange;
     transition: transform .5s;
     box-shadow: 0 0 8px rgba(0, 0, 0, 1.9);
 }
@@ -87,6 +87,7 @@ h1 {
   color: black;
   font-weight: bold;
   background-color:rgba(0,100,100,0.5);
+  border: 1px solid orange;
 }
 
 /********** End Of Home Page  **************/
@@ -308,6 +309,13 @@ span {
 
 #footer p {
   color: #2F4F4F;
+   background-color:rgba(0,100,100,0.5);
+  width: 90%;
+  height: 20px;
+  border-radius: 100%;
+  padding-bottom: 5px;
+  border: 1px orange dotted
+  ;
 }
 
 #footer a{
